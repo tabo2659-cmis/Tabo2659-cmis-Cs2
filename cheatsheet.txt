@@ -2,8 +2,9 @@ List of Terminal commands
 
 pwd
 cd
-gedit
-git add
+ls
+gedit 
+git add filename
 git commit -m""
 git push
 

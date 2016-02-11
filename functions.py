@@ -25,7 +25,27 @@ def SecsToHours(a,b,c):
 SecsToHours(86400,60,60) 
 #A function that converts number of seconds into hours
 def Areaofacircle(r):
-	pi =(math.pi)
+	pi = (math.pi)
 	return pi * r**2
 	
-Areaofcircle
+Areaofcircle=(5)
+##A function that tells the area of a circle
+def Volumeofsphere(r):
+	pi = (math.pi)
+	return (((4/3.0)*pi)*r**3)
+
+Volumeofsphere=(5)
+##A function that tells the volume of a sphere
+def averagevolume(a,b):
+	pi = (math.pi)
+	Vol1 = (((4/3.0)*pi)*a**3)
+	Vol2 = (((4/3.0)*pi)*b**3)
+	return Vol1 + Vol2/2
+
+averagevolume(5,10)
+#
+def areaoftriangel(a,b,c):
+	p = (a+b+c)/2
+	return math.sqrt(p(p−a)(p−b)(p−c))
+
+areaoftriangle(1,2,2.5)

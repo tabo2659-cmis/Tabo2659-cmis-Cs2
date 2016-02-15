@@ -44,18 +44,19 @@ def averagevolume(a,b):
 
 averagevolume(5,10)
 #A function that tells the average voulume of two spheres
-def areaoftriangel(a,b,c):
-	p = (a+b+c)/2
-	return math.sqrt(p(p−a)(p−b)(p−c))
+def areaoftriangle(a,b,c):
+	p = a+b+c/2.0
+	return math.sqrt(p*(p-a)*(p-b)*(p-c))
 
 areaoftriangle(1,2,2.5)
 #A function that tells the area of a triangle
 def right_align(a):
 	return (a.rjust(80))
 right_align("Hello")
-#A function that aligns hello to the right side
+#A function that aligns hello to the right side of python
 def center(a):
 	return (a.center(40))
-print center("Hello")
-#A function that aligns hello to the right side
+center("Hello")
+#A function that aligns hello to center of python
+
 

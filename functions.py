@@ -29,13 +29,13 @@ def Areaofacircle(r):
 	return pi * r**2
 	
 Areaofcircle=(5)
-##A function that tells the area of a circle
+#A function that tells the area of a circle
 def Volumeofsphere(r):
 	pi = (math.pi)
 	return (((4/3.0)*pi)*r**3)
 
 Volumeofsphere=(5)
-##A function that tells the volume of a sphere
+#A function that tells the volume of a sphere
 def averagevolume(a,b):
 	pi = (math.pi)
 	Vol1 = (((4/3.0)*pi)*a**3)
@@ -43,9 +43,19 @@ def averagevolume(a,b):
 	return Vol1 + Vol2/2
 
 averagevolume(5,10)
-#
+#A function that tells the average voulume of two spheres
 def areaoftriangel(a,b,c):
 	p = (a+b+c)/2
 	return math.sqrt(p(p−a)(p−b)(p−c))
 
 areaoftriangle(1,2,2.5)
+#A function that tells the area of a triangle
+def right_align(a):
+	return (a.rjust(80))
+right_align("Hello")
+#A function that aligns hello to the right side
+def center(a):
+	return (a.center(40))
+print center("Hello")
+#A function that aligns hello to the right side
+

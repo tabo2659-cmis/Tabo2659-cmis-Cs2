@@ -58,5 +58,13 @@ def center(a):
 	return (a.center(40))
 center("Hello")
 #A function that aligns hello to center of python
-
+def msgbox(a):
+	return"""		  +---------+
+		  |  """+a+"""  |
+		  +----------+"""
+	return"""		  +---------+
+		  |"""+a+"""|
+		  +------........................................................................................+"""
+print msgbox("Hello")
+print msgbox("I eat cats!")
 

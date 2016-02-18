@@ -59,12 +59,13 @@ def center(a):
 center("Hello")
 #A function that aligns hello to center of python
 def msgbox(a):
-	return"""		  +---------+
+	x =    """		  +---------+
+		  |  """+"Hello"+"""  |
+		  +---------+"""
+	print x
+	return"""		  +---------------+
 		  |  """+a+"""  |
-		  +----------+"""
-	return"""		  +---------+
-		  |"""+a+"""|
-		  +------........................................................................................+"""
-print msgbox("Hello")
+		  +---------------+"""
+	
 print msgbox("I eat cats!")
-
+# This function displays the word Hello and the sentence I eat cats! in a box 

@@ -52,7 +52,7 @@ areaoftriangle(1,2,2.5)
 #A function that tells the area of a triangle
 def right_align(a):
 	return (a.rjust(80))
-right_align("Hello")
+print right_align("Hello")
 #A function that aligns hello to the right side of python
 def center(a):
 	return (a.center(40))
@@ -69,3 +69,15 @@ def msgbox(a):
 	
 print msgbox("I eat cats!")
 # This function displays the word Hello and the sentence I eat cats! in a box 
+a=add(3,4)
+b=sub(5,3)
+c=mul(4,4)
+d=div(2,3.0)
+e=SecsToHours(86400,60,60)
+f=Areaofcircle=(5)
+g=Volumeofsphere=(5)
+h=averagevolume(5,10)
+i=areaoftriangle(1,2,2.5)
+j=right_align("Hello")
+k=center("Hello")
+l=msgbox("I eat cats!")

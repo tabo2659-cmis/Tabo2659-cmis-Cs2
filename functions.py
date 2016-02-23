@@ -47,10 +47,10 @@ def averagevolume(a,b):
 averagevolume(10,20)
 #A function that tells the average voulume of two spheres
 def areaoftriangle(a,b,c):
-	p = a+b+c/2.0
+	p = (a+b+c)/2.0
 	return math.sqrt(p*(p-a)*(p-b)*(p-c))
 
-print areaoftriangle(1,2,2.5)
+areaoftriangle(1,2,2.5)
 #A function that tells the area of a triangle
 def right_align(a):
 	return (a.rjust(80))
@@ -61,7 +61,7 @@ def center(a):
 center("Hello")
 #A function that aligns hello to center of python
 def msgbox(a):
-    return "+" + (len(a) + 4) * "-" + "+\n" "|" + "  " + a + "  " + "|\n" "+" + (len(a) + 4) * "-" + "+"
+    return "+" + (len(a) + int(4)) * "-" + "+\n" "|" + "  " + a + "  " + "|\n" "+" + (len(a) + int(4)) * "-" + "+"
 
 msgbox("Hello")
 msgbox("I eat cats")
@@ -80,5 +80,7 @@ J = right_align("Hello")
 K = center("Hello")
 L = msgbox("I eat cats!")
 # Stores all the functions in this file in a variable
+
+print msgbox(A)
 
 

@@ -24,24 +24,24 @@ def SecsToHours(a,b,c):
 
 SecsToHours(86400,60,60) 
 #A function that converts number of seconds into hours
-def Areaofacircle(r):
+def Areaofcircle(r):
 	pi = (math.pi)
-	return pi * r**2
+	return pi * r **2
 	
-Areaofcircle=(5)
+Areaofcircle(5)
 #A function that tells the area of a circle
 def Volumeofsphere(r):
 	pi = (math.pi)
 	return (((4/3.0)*pi)*r**3)
 
-Volumeofsphere=(5)
+Volumeofsphere(5)
 #A function that tells the volume of a sphere
 def averagevolume(a,b):
 	pi = (math.pi)
 	x = a/2
 	y = b/2
-	Vol1 = (((4/3.0)*pi)*a**3)
-	Vol2 = (((4/3.0)*pi)*b**3)
+	Vol1 = Volumeofsphere(int(x))
+	Vol2 = Volumeofsphere(int(y))
 	return (Vol1 + Vol2)/2
 
 averagevolume(10,20)
@@ -67,20 +67,56 @@ msgbox("Hello")
 msgbox("I eat cats")
 # This function displays the word Hello and the statement I eat cats in a box
 
-A = add(3,4)
-B = sub(5,3)
-C = mul(4,4)
-D = div(2,3.0)
-E = SecsToHours(86400,60,60)
-F = Areaofcircle=(5)
-G = Volumeofsphere=(5)
-H = averagevolume(5,10)
-I = areaoftriangle(1,2,2.5)
-J = right_align("Hello")
-K = center("Hello")
-L = msgbox("I eat cats!")
-# Stores all the functions in this file in a variable
+a = add(4,6)
+b = add(8,6)
+print msgbox(str(a))
+print msgbox(str(b)) 
+c = sub(5,3)
+d = sub(4,4)
+print msgbox(str(c))
+print msgbox(str(d)) 
+e = mul(2,3.0)
+f = mul(4,8)
+print msgbox(str(e))
+print msgbox(str(f)) 
+g = div(48,8)
+h = div(625,25)
+print msgbox(str(g))
+print msgbox(str(h)) 
+i = SecsToHours(46890,60,60)
+j = SecsToHours(60000,60,60)
+print msgbox(str(i))
+print msgbox(str(j)) 
+k = Areaofcircle(6)
+l = Areaofcircle(9)
+print msgbox(str(k))
+print msgbox(str(l)) 
+m = Volumeofsphere(7)
+n = Volumeofsphere(14)
+print msgbox(str(m))
+print msgbox(str(n)) 
+o = averagevolume(20,40)
+p = averagevolume(40,60)
+print msgbox(str(o))
+print msgbox(str(p)) 
+q = areaoftriangle(2,2,2)
+r = areaoftriangle(4,2,6)
+print msgbox(str(q))
+print msgbox(str(r)) 
+s = right_align("MEEEEE")
+t = right_align("The end is nigh!")
+print msgbox(str(s))
+print msgbox(str(t)) 
+u = center("Haundig")
+v = center("Who wants to play CSGO?")
+print msgbox(str(u))
+print msgbox(str(v)) 
+w = msgbox("Dragons dogma")
+x = msgbox("Undertale")
+print msgbox(str(w))
+print msgbox(str(x)) 
+# Stores all the functions in this file in a variablen
 
-print msgbox(A)
+
 
 

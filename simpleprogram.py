@@ -1,17 +1,15 @@
-def info():
-	y = raw_input("Type ypur age:")
-	return y
-info()
-
 def hrslefttolive():
-	hrs = int() * 8760/2.0	
+	y = raw_input("Type ypur age:")
+	hrs = int(y) * 8760/2.0	
 	return hrs
+hrslefttolive()
 
 def timeleft():
-	hrslefttolive()
-        return 621,960 - int(hrsleftotlive())
+	x = hrslefttolive()
+        return 621,960 - int(x)
+
 def concan(x,a,b):
-	return  " Hey! " + {} + " who " + {} + " how are you? I'm guessing you said yes to the Ferrari " + {} + " you did didn't you? ".format(x,a,b)
+	return  " Hey! {} who {} how are you? I'm guessing you said yes to the Ferrari {} you did didn't you? ".format(x,a,b)
 
 def main(): 
 	x = raw_input("Type your name:")

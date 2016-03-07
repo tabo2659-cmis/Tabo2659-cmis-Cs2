@@ -69,8 +69,9 @@ def main():
     print """ Circle        Diameter             
  c1            {}
  c2            {}
- c3            {}""".format(D1, D2, D3) 
+ c3            {}""".format(D1, D2, D3)
+#5 
 main()
 #2
 
-# total = 28.5                       
+# total = 34.5                       

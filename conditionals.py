@@ -18,7 +18,7 @@ def whattodo():
     choose = raw_input("You see a friend ditching class do you join him?:") 
     if choose == "yes":
         print "you skip first period - English"
-        anotherchoice = raw_input("Your friend leaves for P.E do you attend the next period - Math or skip it as well?:(type skip or no")
+        anotherchoice = raw_input("Your friend leaves for P.E do you attend the next period - Math or skip it as well?:(type skip or no):")
         if anotherchoice == "skip":
             consequence = """You sleep in the library till lunchbreak and your teachers see you
 They inform your parents who inform Mr.Souza(R.I.P = You)
@@ -38,9 +38,11 @@ your friend joins you and both of attend first period - English"""
 def duringEng():
     Classbehav = raw_input("Somebody tries to talk to you during class do you start a conversation?:")
     if Classbehav == "yes":
-        print "Ms.Brill's makes fun of you for talking! - You feel embarassed" 
-    elif Classbehave == "no":
-        print "You say no and get through the class without any problem!"
+        print """Ms.Brill's makes fun of you for talking! - You feel embarassed
+And now after english the 15 min break begins!""" 
+    elif Classbehav == "no":
+        print """ You say no and get through the class without any problem!
+And now after english the 15 min break begins!"""
     else:
         print "cooperate"
 
@@ -78,30 +80,22 @@ You have a good laugh about it"""
 def mathquestion():
     Rnumber1 = float(random.random())
     Rnumber2 = float(random.randint(15.0,20.0))
-    Rnumber3 = float(random.choice([1,2234,3,3453],1))
-    print str(-{} + math.sqrt(({})**2 - 4*(48.0)*({}))/(2*{})).format(Rnumber1,Rnumber1,Rnumber2,Rnumber3)
+    Rnumber3 = float(random.choice([1,2234,3,3453]))
+    print str({} + math.sqrt(({})**2 - 4*(48.0)*({}))/(2*{})).format(Rnumber1,Rnumber1,Rnumber2,Rnumber3)
 
 def period2():
     print """ After English you go to your next class Math 
 Ms.Rachna gives the class a question to get their brains working
 the person to finish it first gets NOTHING! """
     question = mathquestion()    
-    
     print question 
-    answer = raw_input("Answer the question if you dare!, Type a number or type I GIVE UP:"
-    
-    if answer < 0:
-        print "Ms. Rachna says thats kinda close but still wrong"
-    elif answer > 1000:
-        print "Ms. Rachan laughs at you for being so far from the answer"
-    elif answer == “I GIVE UP”:
+    answer = raw_input("Answer the question if you dare!, Type a number or type I GIVE UP:") 
+    if answer == "I GIVE UP":
         print "Ms.Rachna says I didn't expect you to try anyways"  
     else:
-        print " cooperate "
-        
-    print """The smart kid who everyone hates for no reason got it right!
+        print """The smart kid who everyone hates for no reason got it right!
 You hate him even more
-You finish math class and head on to your next class! """
+class finishes and ou move on to your next period """
     
 def period3(grade):
     if grade == "9":
@@ -134,7 +128,7 @@ def period3(grade):
         print "LOL"
         
 def period4(fitOrNot,gender): 
-    if gender == "male:
+    if gender == "male":
         ouch = "Balls"
     elif gender == "female":
         ouch = "Breasts"
@@ -187,7 +181,7 @@ You see something, almost like a ghost in the corner
 .............AhhhhhhhhhhhHHHHHHHHHHHHHHHHHHH!!
 ..
 ...
-....┏(-Д-┏)～
+.... -(O.O)- (In case you didn't realize that's the ghost)
         
 You were never heard from again
 THE END(You were killed by a ghost)"""
@@ -200,7 +194,7 @@ THE END(You were killed by a ghost)"""
 (-_-) = boredom """
 
 def chemlab(gender):
-if gender == "female":
+    if gender == "female":
         effect = "you end up going to prom with him later"
     elif gender == "male":
         effect = "you both become bro's and he helps you out during some hard times in life"
@@ -231,19 +225,19 @@ def period5(grade,gender):
             print "Nooo that's wrong sorry no candy for you"
     elif grade == "10":
         question = raw_input("What is being cycled between cellular respiration and photosynthesis?:")
-        if question = "matter":
+        if question == "matter":
             print "You got it right! You got some candy!"
         else:
             print "Nooo that's wrong sorry no candy for you"
     elif grade == "11":
         question = raw_input("Which of these is an element used for the Haber process?:")
-        if question = "hydrogen":
+        if question == "hydrogen":
             print "You got it right! You got some candy!"
         else:
             print "Nooo that's wrong sorry no candy for you"        
     elif grade == "12":
         question = raw_input("What is the name of the region where icy bodies that lie beyond Neptune's orbit?:")
-        if question = "kuiper belt":
+        if question == "kuiper belt":
             print "You got it right! You got some candy!"
         else:
             print "Nooo that's wrong sorry no candy for you"
@@ -266,7 +260,7 @@ You feel extremely confidenet in your answers"""
     print "you get through class peacefully"
     
 def afterschool():
-    aftermath = raw_input("Are you part of any after school club?:)  
+    aftermath = raw_input("Are you part of any after school club?:")  
     if aftermath == "yes":
         print """You stay in school till 4:00 pm and go home later
 
@@ -278,7 +272,7 @@ THE END(You had an average day)"""
 
 def main():
     grade = raw_input("Which grade are you in?:")
-    gender = raw_input("Are you Male or female?:")
+    gender = raw_input("Are you male or female?:")
     fitOrNot = raw_input("Are you good at sports?, Type yes or no or YEESS or NOOOOOOO(count the zeros or the program won't work sry):")
     arrival = raw_input("Pick one of these choice1,choice2,choice3 your choice will determine what time you arrive at school:")
     arrived = schooltime(arrival)

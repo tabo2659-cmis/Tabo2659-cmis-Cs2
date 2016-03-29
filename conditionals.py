@@ -81,8 +81,7 @@ def mathquestion():
     Rnumber1 = float(random.random())
     Rnumber2 = float(random.randint(15.0,20.0))
     Rnumber3 = float(random.choice([1,2234,3,3453]))
-    question = float(random.random() + math.sqrt((random.random()**2) - 4*(48.0)*(random.randint(15.0,20.0)))/(2*random.choice({1,2334,3,3453)))
-    print question
+    print raw_input(" If the side of a square is 64cm^2 what is it's volume?: ")
 
 def period2():
     print """ After English you go to your next class Math 
@@ -92,11 +91,15 @@ the person to finish it first gets NOTHING! """
     print question 
     answer = raw_input("Answer the question if you dare!, Type a number or type I GIVE UP:") 
     if answer == "I GIVE UP":
-        print "Ms.Rachna says I didn't expect you to try anyways"  
+        print """Ms.Rachna says I didn't expect you to try anyways""
+Class finishes and you move on to the next period """  
+    elif answer == "512":    
+        print """ Ms.Rachna says DAMN SON!!!! You smart! 
+Class finishes and you feel good knowing that your math teacher said something like that """
     else:
         print """The smart kid who everyone hates for no reason got it right!
 You hate him even more
-class finishes and ou move on to your next period """
+class finishes and you move on to your next period """
     
 def period3(grade):
     if grade == "9":
@@ -139,10 +142,11 @@ def period4(fitOrNot,gender):
     print "You barely make it to your next class P.E because you were sleeping in the previous class"
     if fitOrNot == "yes":
         print """You played Basketball today and scored 10 HOOPS!! 
-You feel more confident about yourself"""        
+You feel more confident about yourself
+You finish P.E take a shower and go to eat lunch!(You must be so happy)"""        
    
     elif fitOrNot == "no":
-        print """ You got fainted during P.E and went to the nurses!"
+        print """ You fainted during P.E and went to the nurses!"
 You were in a coma and woke up 2 days later
 You have a boyfriend now? Whaaaat!?
         
@@ -151,15 +155,15 @@ P.S Doesn't matter if youre a boy or girl you got a boyfriend"""
         
     elif fitOrNot == "YEES":
         print """You play football(Soccer) today and get 4 goals!
-High-five! (jk you suck those were lucky shots)"""
+High-five! (jk you suck those were lucky shots)
+You finish P.E take a shower and go to eat lunch!(You must be so happy)"""
    
     elif fitOrNot == "NOOOOOOO":
         print """ You were playing football and your mind was somewhere else
-You get hit in the {} with the ball""".format(ouch)
+You get hit in the {} with the ball (LOL)
+You finish P.E take a shower and go to eat lunch!(You must be so happy)""".format(ouch) 
     else:
-        print "Hey :)"
-
-    print "You finish P.E take a shower and go to eat lunch!(You must be so happy)"    
+        print " Hey :) "    
 
 def lunch(gender):
     if gender == "male":
@@ -217,7 +221,7 @@ P.S {} """.format(effect)
     
 def period5(grade,gender):
     print""" You go to the science classroom 
-    Your science picks on you for some reason and asks you these questions""" 
+Your science tracher picks on you for some reason and asks you a question (to which you should know the answer) """ 
     if grade == "9":
         question = raw_input("What noble gas is not like the other noble gases?:")
         if question == "helium":
@@ -282,6 +286,7 @@ def main():
     secondp = period2()
     thirdp = period3(grade)
     fourthp = period4(fitOrNot,gender)
+    eatnow = lunch(gender)
     fifthp = period5(grade,gender)
     sixthp = period6()
     

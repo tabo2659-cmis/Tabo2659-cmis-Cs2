@@ -81,7 +81,8 @@ def mathquestion():
     Rnumber1 = float(random.random())
     Rnumber2 = float(random.randint(15.0,20.0))
     Rnumber3 = float(random.choice([1,2234,3,3453]))
-    print str({} + math.sqrt(({})**2 - 4*(48.0)*({}))/(2*{})).format(Rnumber1,Rnumber1,Rnumber2,Rnumber3)
+    question = float(random.random() + math.sqrt((random.random()**2) - 4*(48.0)*(random.randint(15.0,20.0)))/(2*random.choice({1,2334,3,3453)))
+    print question
 
 def period2():
     print """ After English you go to your next class Math 

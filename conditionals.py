@@ -23,7 +23,8 @@ def whattodo():
             consequence = """You sleep in the library till lunchbreak and your teachers see you
 They inform your parents who inform Mr.Souza(R.I.P = You)
 You are given a punishment to clean the lunch sala for 2 weeks"""
-            
+            exit()
+
             print """ {} - not that bad I would say! 
 THE END(You had a bad day)""".format(consequence)
         elif anotherchoice == "no":
@@ -35,6 +36,7 @@ THE END(You had a bad day)""".format(consequence)
 your friend joins you and both of attend first period - English"""
     else:
         print "type the options"
+
 def duringEng():
     Classbehav = raw_input("Somebody tries to talk to you during class do you start a conversation?:")
     if Classbehav == "yes":
@@ -152,7 +154,8 @@ You have a boyfriend now? Whaaaat!?
         
 THE END(You found true love)
 P.S Doesn't matter if youre a boy or girl you got a boyfriend"""
-        
+        exit()
+
     elif fitOrNot == "YEES":
         print """You play football(Soccer) today and get 4 goals!
 High-five! (jk you suck those were lucky shots)
@@ -190,7 +193,8 @@ You see something, almost like a ghost in the corner
         
 You were never heard from again
 THE END(You were killed by a ghost)"""
-    
+    	exit()
+
     elif location == "lunchsala:":
         print " You talk with your friends and enjoy the {}".format(hormones)
     elif location == "cafeteria":
@@ -214,6 +218,8 @@ One of your friends gets injured - acid burns his arm badly"""
 
 THE END(You had a good day)
 P.S {} """.format(effect)
+	exit()
+
     elif friend == "no":
         print "you continue on with your day"
     else:
@@ -274,6 +280,7 @@ THE END(You had an average day)"""
         print """ You spend a little time with your friends and then go home
 
 THE END(You had an average day)"""
+	exit()
 
 def main():
     grade = raw_input("Which grade are you in?:")

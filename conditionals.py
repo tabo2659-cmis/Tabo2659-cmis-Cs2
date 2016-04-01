@@ -23,12 +23,13 @@ def whattodo():
             consequence = """You sleep in the library till lunchbreak and your teachers see you
 They inform your parents who inform Mr.Souza(R.I.P = You)
 You are given a punishment to clean the lunch sala for 2 weeks"""
+            print consequence
             exit()
 
             print """ {} - not that bad I would say! 
 THE END(You had a bad day)""".format(consequence)
         elif anotherchoice == "no":
-            print """You go to your first class - English"""
+            print """You go to your second class - Math"""
         else:
             print "type one of the options"
     elif choose == "no":
@@ -80,10 +81,8 @@ You have a good laugh about it"""
     else:
         "You do nothing, JUST NOTHING"
 def mathquestion():
-    Rnumber1 = float(random.random())
-    Rnumber2 = float(random.randint(15.0,20.0))
-    Rnumber3 = float(random.choice([1,2234,3,3453]))
-    print raw_input(" If the side of a square is 64cm^2 what is it's volume?: ")
+    Rnumber = float(random.choice(64,484,225,81))
+    print "If the side of a square is {} ".format(Rnumber) + " what is it's volume?"
 
 def period2():
     print """ After English you go to your next class Math 
@@ -95,7 +94,7 @@ the person to finish it first gets NOTHING! """
     if answer == "I GIVE UP":
         print """Ms.Rachna says I didn't expect you to try anyways""
 Class finishes and you move on to the next period """  
-    elif answer == "512":    
+    elif answer == "512" or "729" or "10648" or "3375":    
         print """ Ms.Rachna says DAMN SON!!!! You smart! 
 Class finishes and you feel good knowing that your math teacher said something like that """
     else:
@@ -156,7 +155,7 @@ THE END(You found true love)
 P.S Doesn't matter if youre a boy or girl you got a boyfriend"""
         exit()
 
-    elif fitOrNot == "YEES":
+    elif fitOrNot == "YEESS":
         print """You play football(Soccer) today and get 4 goals!
 High-five! (jk you suck those were lucky shots)
 You finish P.E take a shower and go to eat lunch!(You must be so happy)"""
@@ -177,7 +176,7 @@ def lunch(gender):
         print "in getting bored of these else's"
         
     location = raw_input("Where do you eat with your friends?(stone tables, cafeteria, lunch sala):")
-    if location == "stonetables":
+    if location == "stone tables":
         print """ You go to the bathroom in the library 
 and see Jon, Tabo and Bryson playing smash like they always do 
 You enter the bathroom
@@ -295,8 +294,9 @@ def main():
     fourthp = period4(fitOrNot,gender)
     eatnow = lunch(gender)
     fifthp = period5(grade,gender)
-    sixthp = period6()
+    sixthp = period6(grade)
     
+
 main()
 
 

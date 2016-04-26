@@ -3,14 +3,14 @@
 #a) True
 #b) False
 #c) Apple == True
-#
+#3
 #2) What does 'return' do?
 # Return gives the final value of a function's calculations.
-#
+#1
 #3) What are 2 ways indentation is important in python code?
 #a) In a function if you indent your lines properly then python won't recognize what lines are part of the function.
 #b) Indentation 
-#
+#1
 #
 
 #PART 2: Reading
@@ -26,10 +26,10 @@
 #problem2_c) = False
 #problem2_d) = False
 #
-#problem3_a) = 0.03
-#problem3_b) = 0.05
+#problem3_a) = 0.3
+#problem3_b) = 0.5
 #problem3_c) = 0.5
-#problem3_d) = 0.25
+#problem3_d) = 0.5
 #
 #problem4_a) = 7
 #problem4_b) = 5 

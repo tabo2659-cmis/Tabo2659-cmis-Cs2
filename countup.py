@@ -24,14 +24,15 @@ def main():
 main()
 
 def adder(sum_):
-    print sum_
+    print "Running Total: 0"
     numb = raw_input("Next Number:")    
-    if numb == None:
+    if numb == "":
         print "The Sum Is {}".format(sum_) 
     else:
+	sum_ += int(numb)
         adder(sum_)
         
 def main():
-    sum_ = "Running Total:0"
+    sum_ = 0
     adder(sum_)
 main()

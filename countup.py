@@ -23,16 +23,18 @@ def main():
         countdown_from_to(16,32) 
 main()
 
-def adder(sum_):
-    print "Running Total: 0"
-    numb = raw_input("Next Number:")    
+def adder(summation):
+    numb = float(raw_input("Next Number:"))        
     if numb == "":
-        print "The Sum Is {}".format(sum_) 
+        print "The sum is {}".format(summation) 
+    elif numb == float:
+        print numb 
     else:
-	sum_ += int(numb)
-        adder(sum_)
+        summation += float(numb)
+        print "Running total: {}".format(summation)
+        adder(summation)
         
-def main():
-    sum_ = 0
-    adder(sum_)
+def main(): 
+    adder(0)
+
 main()

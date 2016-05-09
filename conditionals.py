@@ -81,7 +81,7 @@ You have a good laugh about it"""
     else:
         "You do nothing, JUST NOTHING"
 def mathquestion():
-    Rnumber = float(random.choice(64,484,225,81))
+    Rnumber = 64
     print "If the side of a square is {} ".format(Rnumber) + " what is it's volume?"
 
 def period2():
@@ -94,7 +94,7 @@ the person to finish it first gets NOTHING! """
     if answer == "I GIVE UP":
         print """Ms.Rachna says I didn't expect you to try anyways""
 Class finishes and you move on to the next period """  
-    elif answer == "512" or "729" or "10648" or "3375":    
+    elif int(answer) <= 512:    
         print """ Ms.Rachna says DAMN SON!!!! You smart! 
 Class finishes and you feel good knowing that your math teacher said something like that """
     else:

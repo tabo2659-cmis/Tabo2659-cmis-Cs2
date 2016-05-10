@@ -94,9 +94,13 @@ the person to finish it first gets NOTHING! """
     if answer == "I GIVE UP":
         print """Ms.Rachna says I didn't expect you to try anyways""
 Class finishes and you move on to the next period """  
-    elif int(answer) <= 512:    
+    elif int(answer) == 512:    
         print """ Ms.Rachna says DAMN SON!!!! You smart! 
 Class finishes and you feel good knowing that your math teacher said something like that """
+    elif int(answer) < 512:
+        print " Ms.Rachna said that you're answer was too low "
+    elif int(answer) > 512:
+        print " Ms.Rachna said that you're answer was too high "
     else:
         print """The smart kid who everyone hates for no reason got it right!
 You hate him even more
@@ -146,7 +150,7 @@ def period4(fitOrNot,gender):
 You feel more confident about yourself
 You finish P.E take a shower and go to eat lunch!(You must be so happy)"""        
    
-    elif fitOrNot == "no":
+    elif fitOrNot == "no" and gender == "male":
         print """ You fainted during P.E and went to the nurses!"
 You were in a coma and woke up 2 days later
 You have a boyfriend now? Whaaaat!?
@@ -260,11 +264,9 @@ def period6(grade):
     print """ You reach your last class of the day - History
 You have a history quiz today"""
     memory = raw_input("Did you remember you had a history test today?:")
-    if memory == "yes":
+    if not memory == "yes":
         print """It's just a small test with 5 questions
 You feel extremely confidenet in your answers"""
-    elif memory == "no":
-        print "even though you didn't remember you feel confident about the test"
     else:
         print "type what I told you to!"
     print "you get through class peacefully"

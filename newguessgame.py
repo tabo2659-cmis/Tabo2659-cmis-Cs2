@@ -7,6 +7,7 @@ def check(number,randomN,rounds):
         print " Thanks for playing "
     else:
         print " Thanks for playing "
+
 def guess(rounds,randomN,tries):
     number = raw_input(" Guess a number: ")
     if int(number) == randomN:
@@ -33,13 +34,24 @@ def attempts(rounds,randomN,tries):
         guess(rounds-1,randomN,tries)
     else:
         guess(rounds,randomN,tries)
-    
+
+def comp():
+    low = "l"
+    high = "h"
+    correct = "c" 
+    randomG = random.randint(0,100)
+    guess = "I guess {}".format(randomG)
+    print guess
+    myanswer = raw_input( "l(low), h(high), c(correct)" )
+    if myanswer == "l":
+        randomNG = random.randint(guess,)
+
 def main():
     print "Guess a number from 0 to 100 including 0 and 100"
     print "{} rounds remaining".format(3)
     randomN = random.randint(0,100)
     rounds = 2
     tries = 5
-    attempts(rounds,randomN,tries)
+    comp()
 
 main()

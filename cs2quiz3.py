@@ -18,8 +18,8 @@
 # 
 # 5) How do we get data out of a function call?
 #  Return
-#point
 #
+#point
 
 #Section 2: Reading
 # Read the following function definitions and function calls.
